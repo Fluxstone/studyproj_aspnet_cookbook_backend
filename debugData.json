@@ -1,0 +1,127 @@
+[
+	{
+		"dish_title": "Chilli Con Carne",
+		"dish_cookingTime": 90,
+		"dish_image": "https://img.jamieoliver.com/jamieoliver/recipe-database/46258212.jpg?tr=w-800,h-1066",
+		"dish_description": "Chilli con carne is a hearty and spicy stew originating from Tex-Mex cuisine. It primarily consists of ground beef, tomatoes, beans, chili peppers, and a blend of spices such as cumin, paprika, and garlic. The dish is known for its rich, robust flavors and is often served with toppings like shredded cheese, sour cream, and chopped onions. It can be enjoyed on its own or paired with rice, tortillas, or cornbread. Chilli con carne is a popular comfort food and a staple in both casual and festive gatherings.",
+		"dish_ingredients" : [
+			"300g Ground beef",
+			"2 Tomatoes",
+			"1 Can of Beans",
+			"1 Chili peppers",
+			"2 Onions",
+			"Some Cumin",
+			"3 Pieces of Garlic",
+			"1-3 Red Bell Peppers"
+		],
+		"dish_steps": [
+			"Cook the beef: Brown ground beef in a large pot over medium heat.",
+			"Sauté vegetables: Add chopped onions, garlic, and chili peppers, cooking until softened.",
+			"Add spices: Stir in cumin and paprika, cooking for a minute until fragrant.",
+			"Combine ingredients: Add canned tomatoes and beans, mixing well.",
+			"Simmer: Reduce heat and let the mixture simmer for 20-30 minutes, stirring occasionally.",
+			"Season: Add salt and pepper to taste.",
+			"Serve: Enjoy hot with your favorite toppings and sides."
+		]
+	},
+	{
+		"dish_title": "Spaghetti Carbonara",
+		"dish_cookingTime": 30,
+		"dish_image": "https://img.jamieoliver.com/jamieoliver/recipe-database/46258212.jpg?tr=w-800,h-1066",
+		"dish_description": "Spaghetti Carbonara is a classic Italian pasta dish made with eggs, cheese, pancetta, and pepper. It is creamy, rich, and delicious, offering a perfect balance of flavors.",
+		"dish_ingredients": [
+			"200g Spaghetti",
+			"100g Pancetta",
+			"2 Large eggs",
+			"50g Pecorino cheese",
+			"50g Parmesan cheese",
+			"Black pepper",
+			"Salt"
+		],
+		"dish_steps": [
+			"Cook spaghetti: Boil spaghetti in salted water until al dente.",
+			"Prepare pancetta: Fry pancetta until crispy.",
+			"Mix eggs and cheese: Beat eggs and mix with grated Pecorino and Parmesan.",
+			"Combine: Mix hot pasta with pancetta and egg mixture, stirring quickly.",
+			"Season: Add black pepper and serve immediately."
+		]
+	},
+	{
+		"dish_title": "Chicken Curry",
+		"dish_cookingTime": 60,
+		"dish_image": "https://img.jamieoliver.com/jamieoliver/recipe-database/46258212.jpg?tr=w-800,h-1066",
+		"dish_description": "Chicken Curry is a flavorful dish made with tender chicken simmered in a spiced curry sauce. It's a perfect comfort food that's both aromatic and satisfying.",
+		"dish_ingredients": [
+			"500g Chicken breasts",
+			"2 Onions",
+			"3 Garlic cloves",
+			"1 Ginger root",
+			"2 Tomatoes",
+			"1 Can of Coconut milk",
+			"Curry powder",
+			"Chili powder",
+			"Salt",
+			"Pepper"
+		],
+		"dish_steps": [
+			"Prepare chicken: Cut chicken into bite-sized pieces.",
+			"Sauté onions: Cook chopped onions, garlic, and ginger until soft.",
+			"Add spices: Stir in curry powder and chili powder.",
+			"Cook chicken: Add chicken and cook until browned.",
+			"Combine ingredients: Add tomatoes and coconut milk, simmering until chicken is cooked through.",
+			"Season: Add salt and pepper to taste, then serve."
+		]
+	},
+	{
+		"dish_title": "Vegetable Stir-fry",
+		"dish_cookingTime": 20,
+		"dish_image": "https://img.jamieoliver.com/jamieoliver/recipe-database/46258212.jpg?tr=w-800,h-1066",
+		"dish_description": "Vegetable Stir-fry is a quick and healthy dish made with a variety of fresh vegetables sautéed in a flavorful sauce. It's perfect for a light and nutritious meal.",
+		"dish_ingredients": [
+			"1 Broccoli head",
+			"2 Carrots",
+			"1 Bell pepper",
+			"100g Snap peas",
+			"2 Garlic cloves",
+			"Soy sauce",
+			"Olive oil",
+			"Salt",
+			"Pepper"
+		],
+		"dish_steps": [
+			"Prepare vegetables: Cut all vegetables into bite-sized pieces.",
+			"Heat oil: Warm olive oil in a large pan over medium-high heat.",
+			"Cook garlic: Add minced garlic and cook until fragrant.",
+			"Add vegetables: Stir-fry vegetables until tender-crisp.",
+			"Add sauce: Pour in soy sauce, stirring to coat vegetables evenly.",
+			"Season: Add salt and pepper to taste, then serve."
+		]
+	},
+	{
+		"dish_title": "Beef Stroganoff",
+		"dish_cookingTime": 45,
+		"dish_image": "https://img.jamieoliver.com/jamieoliver/recipe-database/46258212.jpg?tr=w-800,h-1066",
+		"dish_description": "Beef Stroganoff is a classic Russian dish made with sautéed beef strips in a creamy mushroom sauce. It's rich, comforting, and perfect for a hearty meal.",
+		"dish_ingredients": [
+			"500g Beef sirloin",
+			"1 Onion",
+			"2 Garlic cloves",
+			"200g Mushrooms",
+			"1 Cup of Sour cream",
+			"1 Cup of Beef broth",
+			"Mustard",
+			"Butter",
+			"Salt",
+			"Pepper"
+		],
+		"dish_steps": [
+			"Prepare beef: Cut beef into thin strips.",
+			"Sauté onions: Cook chopped onions and garlic in butter until soft.",
+			"Cook beef: Add beef strips, cooking until browned.",
+			"Add mushrooms: Stir in sliced mushrooms, cooking until tender.",
+			"Make sauce: Add beef broth and mustard, simmering until reduced.",
+			"Combine: Stir in sour cream, cooking until heated through.",
+			"Season: Add salt and pepper to taste, then serve."
+		]
+	}
+]
