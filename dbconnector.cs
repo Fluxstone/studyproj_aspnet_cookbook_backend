@@ -2,8 +2,9 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using Newtonsoft.Json;
 
-class DBConnector{
-    private MongoClient dbConnection;
+public class DBConnector{
+    private MongoClient _dbConnection;
+
 
     public DBConnector(){
         initDBConnection();
@@ -13,9 +14,9 @@ class DBConnector{
     private void initDBConnection(){
         //Note: This is not considered safe but done for test reasons.
         //See https://www.mongodb.com/docs/drivers/csharp/current/quick-start/#std-label-csharp-quickstart
-        var conString = "mongodb://localhost:27017/cookbook";
+        string conString = "mongodb://localhost:27017/cookbook";
 
-        this.dbConnection = new MongoClient(conString);
+        this._dbConnection = new MongoClient(conString);
     }
 
     //Function: add entry
