@@ -10,10 +10,14 @@ var app = builder.Build();
 /*
 API - Prod
 */
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => {
+    DBConnector con = new DBConnector();
+    return "Greetings mate! DB initialized!";
+});
 
 /*
 API - Debug
 */
 
 app.Run();
+//initDBConnection();
