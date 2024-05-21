@@ -1,8 +1,8 @@
 using MongoDB.Bson;
+using Newtonsoft.Json;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
-//Init DB Connector
 
 //Init CORS
 var  MyAllowSpecificOrigins = "_cookbook_frontend";
@@ -18,6 +18,8 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+//Init DB Connector
 DBConnector con = new DBConnector();
 
 /*
@@ -27,11 +29,28 @@ app.MapGet("/", () => {
     return "Greetings. Cookbook backend ready for instructions.";
 });
 
-app.MapPost("/createDish", ()=>{});
+app.MapPost("/createDish", async (HttpContext context) => {
+    var reader = new StreamReader(context.Request.Body);
+    var requestBody = await reader.ReadToEndAsync();
+
+    Dish dishData = JsonConvert.DeserializeObject<Dish>(requestBody);
+
+    /*
+    TODO: Implement some sort of input validation here!
+    if(myValidationFunction(bodyJson) === false){
+        return "Dish Object malformed or missing";
+    }
+    */
+
+    con.addDish(dishData);
+
+    return "Created dish";
+});
 
 app.MapPatch("/editDish", ()=>{});
 
 app.MapDelete("/deleteDish/{id}", (ObjectId id)=>{
+    con.deleteDish(id);
     return $"Deleted Item with ID {id}";
 });
 

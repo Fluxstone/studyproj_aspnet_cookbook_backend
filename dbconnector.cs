@@ -1,6 +1,5 @@
 using MongoDB.Driver;
 using MongoDB.Bson;
-using Newtonsoft.Json;
 
 public class DBConnector{
     private MongoClient _dbConnection;
@@ -29,14 +28,18 @@ public class DBConnector{
     }
 
     //Function: edit entry
+    public void editDish(ObjectId id, Dish dish){
+
+    }
 
     //Function: remove entry
     public void deleteDish(ObjectId id){
-        _recipeCollection.DeleteOne(a => a.Id==id);
+        _recipeCollection.DeleteOne(targetDish => targetDish.Id==id);
     }
     //Function: Get all entries
+    public void getAllDishes(){
+
+    }
 
     //DebugFunction: Wipe DB and write debug data
-
-    //DebugFunction: Smoketest
 }
