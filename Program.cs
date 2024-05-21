@@ -1,6 +1,6 @@
+using MongoDB.Bson;
+
 var builder = WebApplication.CreateBuilder(args);
-
-
 
 //Init DB Connector
 
@@ -18,21 +18,35 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+DBConnector con = new DBConnector();
 
 /*
 API - Prod
 */
 app.MapGet("/", () => {
-    DBConnector con = new DBConnector();
-    return "Greetings mate! DB initialized!";
+    return "Greetings. Cookbook backend ready for instructions.";
 });
+
+app.MapPost("/createDish", ()=>{});
+
+app.MapPatch("/editDish", ()=>{});
+
+app.MapDelete("/deleteDish/{id}", (ObjectId id)=>{
+    return $"Deleted Item with ID {id}";
+});
+
 
 /*
 API - Debug
 */
 
-app.MapGet("/debug/smoketest", () => {
+app.MapPost("/debug/dbReset", () => {
+    return "DB Reset!";
+});
+
+app.MapPost("/debug/smoketest", () => {
     return "Connection successfull!";
 });
+
 app.UseCors(MyAllowSpecificOrigins);
 app.Run();
